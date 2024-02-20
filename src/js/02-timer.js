@@ -44,6 +44,7 @@ flatpickr('#datetime-picker', options);
 
 document.querySelector('[data-start]').addEventListener('click', function () {
   this.disabled = true;
+  document.querySelector('#datetime-picker').disabled = true;
   const endDate = new Date(this.dataset.date);
   const timerInterval = setInterval(() => {
     const now = new Date();

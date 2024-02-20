@@ -23,6 +23,7 @@ document.querySelector('.form').addEventListener('submit', function (event) {
       }
     });
   });
+  event.target.reset();
 });
 
 function createPromise(position, delay) {
